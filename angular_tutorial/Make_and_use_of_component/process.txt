@@ -1,0 +1,5 @@
+Make component----------------->
+ng generate component <component_name>
+
+Use component-------------->
+<app-component_name></app-component_name>
