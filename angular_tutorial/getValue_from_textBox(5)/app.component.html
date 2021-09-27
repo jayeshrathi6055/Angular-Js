@@ -1,0 +1,7 @@
+<h1>Taking values from textBox</h1>
+<br>
+<!-- Method 1- On Change Value -->
+<input type="text" placeholder="Enter text 1" (keyup)="getValue($event.target)"><br><br>
+<!-- Method 2 On Button Click -->
+<input type="text" placeholder="Enter text 2" #textValue><br><br>
+<button (click)="getValueById(textValue.value)">Get value</button>
