@@ -1,0 +1,7 @@
+<h1>Style Binding</h1>
+
+<p [style.backgroundColor] = "'green'" [style.color] = "'white'">Normal Styling</p>
+<p [style.color] = "err?'red':'green'">Conditional Styling</p>
+
+<h3 [style.backgroundColor] = "color">Dynamic Styling</h3>
+<button (click) = "changeColor()" >Click Me</button>
