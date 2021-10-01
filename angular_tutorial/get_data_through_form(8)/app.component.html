@@ -1,0 +1,19 @@
+<h1>Get data from Form</h1>
+<!-- 
+    1. First import Module in app.module.ts
+    import {FormsModule} from "@angular/forms"
+    imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
+
+  2. Then Make form
+ -->
+
+<form #formId = "ngForm" (ngSubmit) = "getFormValue(formId.value)">
+    <input type="text" ngModel name = "username" placeholder="Enter your username"><br><br>
+    <input type="email" ngModel name = "email" placeholder="Enter your Email"><br><br>
+    <input type="password" ngModel name = "password" placeholder="Enter your Password"><br><br>
+    <Button>Submit</Button>
+</form>
