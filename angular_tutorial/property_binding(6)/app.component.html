@@ -1,0 +1,10 @@
+<h1>Property binding</h1>
+<!-- Method 1 -->
+<input type="text" [value] = name [disabled] = isdisable ><br/><br/>
+<!-- Method 2 -->
+<input type="text" value = {{name}} disabled = {{isdisable}} ><br/><br/>
+
+<!-- I want to enable text box by clicking the button -->
+<button (click) = "enableBox()">Enable input box</button>
+
+<!-- Result - Method 1 will enable and method 2 will same -->

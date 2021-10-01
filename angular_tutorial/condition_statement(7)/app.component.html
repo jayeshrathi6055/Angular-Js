@@ -1,0 +1,54 @@
+<h1>Conditions Statement</h1>
+
+<!-- If-Else statement --------------------------------------- -->
+<!-- Method 1 -->
+<h1 *ngIf="show; else elseBlock">If Block</h1>
+<ng-template #elseBlock>
+  <h1>Else Block</h1>
+</ng-template>
+
+<!-- Method 2 -->
+<h1 *ngIf="answer == 'yes'; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+  <h1>If Block 2</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h1>Else Block</h1>
+</ng-template>
+
+<!-- Nested If ----------------------------------------------- -->
+<ng-template [ngIf] = "color == 'red'">
+    <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf] = "color == 'blue'">
+    <h1>Blue Block</h1>
+</ng-template>
+<ng-template [ngIf] = "color == 'green'">
+    <h1>Green Block</h1>
+</ng-template>
+
+<!-- Switch Case --------------------------------------------- -->
+<div [ngSwitch] = "color">
+    <h1 *ngSwitchCase = "'red'">Red</h1>
+    <h1 *ngSwitchCase = "'yellow'">Yellow</h1>
+    <h1 *ngSwitchCase = "'blue'">Blue</h1>
+    <h1 *ngSwitchCase = "'green'">Green</h1>
+</div>
+
+<!-- For loop ------------------------------------------------ -->
+<span *ngFor = "let item of arr">
+    {{item}}
+</span>
+
+<table border="1">
+    <thead>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Email Id</td>
+    </thead>
+    <tbody *ngFor = "let element of arr_of_obj">
+        <td>{{element.name}}</td>
+        <td>{{element.age}}</td>
+        <td>{{element.email}}</td>
+    </tbody>
+</table>
