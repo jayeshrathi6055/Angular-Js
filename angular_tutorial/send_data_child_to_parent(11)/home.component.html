@@ -1,0 +1,4 @@
+<h1>This is home component</h1>
+
+<input type="text" #box placeholder="Enter your name ">
+<button (click) = "updateDataEvent.emit(box.value)">Send data from child to parent</button>
