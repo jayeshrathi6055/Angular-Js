@@ -1,0 +1,26 @@
+<h1>Pipe in Angular</h1>
+<!-- Pipes Provided by Angular
+
+    CurrencyPipe
+    DatePipe
+    DecimalPipe
+    JsonPipe
+    LowerCasePipe
+    UpperCasePipe
+    PercentPipe
+    SlicePipe
+    AsyncPipe
+ -->
+
+<h2>For string Methods</h2>
+{{name | uppercase}} <br>   <!--uppercase/titlecase/lowercase-->
+{{name | slice:7}} <br>     <!--Slicing = It will cut words of string (slice:start:end)-->
+{{name | slice:2:5}} <br> 
+{{val | currency:"USD"}} <br>
+{{val | currency:"CAD"}}
+<h2>For Date Methods</h2>
+{{date | date}} <br>
+{{date | date:"fullDate"}} <br>
+
+<!-- For Reference - https://codecraft.tv/courses/angular/pipes/built-in-pipes/ -->
+<a href="https://codecraft.tv/courses/angular/pipes/built-in-pipes/">Take a reference for pipes</a>
