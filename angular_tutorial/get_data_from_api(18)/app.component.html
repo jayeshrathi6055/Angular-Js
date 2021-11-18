@@ -1,0 +1,25 @@
+<h1>Services in Angular</h1>
+
+<!-- Firstly write command in command prompt
+ng g service UserData
+-->
+
+<!-- Remember Data should be call in service.ts so that we can access data from any component -->
+
+<!-- Show API Data -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Sno</th>
+            <th>Title</th>
+            <th>Completed</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of user_data">
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.completed}}</td>
+        </tr>
+    </tbody>
+</table>
