@@ -1,0 +1,22 @@
+<h1>Group Routing in module</h1>
+
+<!-- To generate module like app then write command  
+ng g m moduleName --routing     (Now you can defined routes in your module instead of app module)
+-->
+
+<!-- To generate component in module then write command  
+ng g c moduleName/componentName
+-->
+
+<!-- Now register your module in app.module.ts -->
+
+<nav>
+    <ul>
+        <li><a routerLink="home">Go to home</a></li>
+        <li><a routerLink="admin/login">Admin Login</a></li>
+        <li><a routerLink="admin/list">Admin List</a></li>
+        <li><a routerLink="user/login">User Login</a></li>
+        <li><a routerLink="user/list">User List</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
